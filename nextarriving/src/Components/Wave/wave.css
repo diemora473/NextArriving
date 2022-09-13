@@ -1,0 +1,61 @@
+.bg_color {
+    width: 100%;
+    height: 90%;
+    background: #2196f3;
+    position: absolute;
+    top: 0;
+}
+
+.wave {
+    width: 6000%;
+    height: 100%;
+    position: absolute;
+    top: 350px;
+    left: 0;
+    background-image: url(../Img/wd1.svg);
+    background-position: bottom;
+}
+
+.w1 {
+    animation: w1 7s linear infinite;
+
+}
+
+.w2 {
+    /* top: 260px; */
+    left: 0;
+    animation: w2 7s linear -.125s infinite, desplazamiento 7s ease infinite;
+    opacity: 0.5;
+}
+
+@keyframes w1 {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes w2 {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes desplazamiento {
+
+    0%,
+    100% {
+        transform: translateY(-25px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
