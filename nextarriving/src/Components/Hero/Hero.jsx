@@ -17,6 +17,7 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react';
 import Wave from "../Wave/Wave";
+import '../NavBar/NavBar.css'
 import Carousel from "../Carrousel/Carrousel";
 export default function Hero() {
     return (
@@ -37,11 +38,14 @@ export default function Hero() {
                             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
 
                             <br />
-                            <img className="relative w-30 h-30 left-20 mb-10"
-                                src={logo2} alt="NextArriving"
-                            />
-                            <div className=' relative font-bold text-white'>
-                                "Conectandote con lo que queres"
+                            <div className="">
+
+                                <img className="relative w-30 h-40 left-5 mb-10 btn nav"
+                                    src={logo2} alt="NextArriving"
+                                />
+                                <div className=' relative font-bold text-white'>
+                                    "Conectandote con lo que queres"
+                                </div>
                             </div>
                         </Heading>
                         <Stack
