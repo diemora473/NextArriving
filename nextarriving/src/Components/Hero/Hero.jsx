@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../Img/logo.png"
 import logo2 from "../Img/logo2.png"
+import Line from "../Divider/Divider";
 import {
     Container,
     Stack,
@@ -23,6 +24,7 @@ export default function Hero() {
     return (
         <div className="relative ">
             <Wave />
+
             <Container maxW={'7xl'}>
                 <Stack
                     align={'center'}
@@ -35,14 +37,16 @@ export default function Hero() {
                             lineHeight={1.1}
                             py={{}}
                             fontWeight={600}
-                            fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
+                            fontSize={{ base: '3xl', sm: '4xl', lg: '5xl' }}>
 
                             <br />
                             <div className="">
+                                <a href="https://www.instagram.com/nextarriving/">
 
-                                <img className="relative w-30 h-40 left-5 mb-10 btn nav"
-                                    src={logo2} alt="NextArriving"
-                                />
+                                    <img className="relative w-30 h-40 left-5 mb-10 btn nav"
+                                        src={logo2} alt="NextArriving"
+                                    />
+                                </a>
                                 <div className=' relative font-bold text-white'>
                                     "Conectandote con lo que queres"
                                 </div>
