@@ -52,8 +52,7 @@ export default function Footer() {
                                 New
                             </Tag> */}
                         </Stack>
-                        <Link href={'#'}>Testimonios</Link>
-                        <Link href={'#'}>Zonas</Link>
+                        <Link href={'/NextArriving/Zone'}>Zonas</Link>
                     </Stack>
                     <Stack align={'flex-start'}>
                         <ListHeader>Empresa</ListHeader>
