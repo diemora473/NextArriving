@@ -35,7 +35,6 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 export default function Footer() {
     return (
         <Box
-
             color={useColorModeValue('gray.700', 'gray.200')}>
             <Container as={Stack} maxW={'6xl'} py={10}>
                 <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
@@ -43,7 +42,7 @@ export default function Footer() {
                         <ListHeader>NextArriving</ListHeader>
                         <Link href={'#'}>Home</Link>
                         <Stack direction={'row'} align={'center'} spacing={2}>
-                            <Link href={'#'}>Informacion</Link>
+                            <Link href={'/NextArriving/Info'}>Informacion</Link>
                             {/* <Tag
                                 size={'sm'}
                                 bg={useColorModeValue('green.300', 'green.800')}

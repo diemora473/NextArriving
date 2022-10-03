@@ -67,7 +67,6 @@ export default function NavZone() {
 
                 </ul>
             </div>
-            hols
         </div>
     )
 }
