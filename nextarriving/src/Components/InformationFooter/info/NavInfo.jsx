@@ -22,12 +22,12 @@ import {
     ChevronRightIcon,
   } from '@chakra-ui/icons';
   import logo2 from '../../Img/logo2.png';
-  
+ 
   export default function NavInfo() {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-        <div className='nav'>
+        <div className='nav '>
       <Box>
         <Flex
           color={useColorModeValue('gray.600', 'white')}
@@ -59,10 +59,11 @@ import {
             
             </Text> */}
                 <div className='h-12 lg:w-32'>
-
+                  <Link href='/'>
              <img 
              src={logo2}
              />
+             </Link>
              </div>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={20}>
@@ -76,18 +77,29 @@ import {
             direction={'row'}
             spacing={6}>
 
-            {/* <div class="flex-none pr-5 text-white">
-                                <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full hidden lg:block">Home</div>
+            <div class=" pr-5 text-white ">
+              <div className='hidden lg:block'>
+
+                                <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full ">Home</div>
                             </div>
-            <div class="flex-none pr-5 text-white">
-                                <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full hidden lg:block">Home</div>
+                              </div>
+             
+            <div class=" pr-5 text-white ">
+              <div className='hidden lg:block'>
+
+                                <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full ">Zonas</div>
                             </div>
-            <div class="flex-none pr-5 text-white">
-                                <div class=" hidden lg:block btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full ">Home</div>
+                              </div>
+             
+            <div class=" pr-5 text-white ">
+              <div className='hidden lg:block'>
+
+                                <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full ">Otros</div>
                             </div>
-            <div class="flex-none pr-5 text-white">
-                                <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full hidden lg:block">Home</div>
-                            </div> */}
+                              </div>
+             
+           
+                            
           </Stack>
         </Flex>
   

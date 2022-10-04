@@ -43,7 +43,7 @@ export default function FooterZone() {
                     <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
                         <Stack align={'flex-start'}>
                             <ListHeader>NextArriving</ListHeader>
-                            <Link href={'#'}>Home</Link>
+                            <Link href={'/'}>Home</Link>
                             <Stack direction={'row'} align={'center'} spacing={2}>
                                 <Link href={'#'}>Informacion</Link>
                                 {/* <Tag
