@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import NavZone from './Components/Zonas/NavZonas';
 import Zone from './Components/Zonas/ZoneHome';
 import Info from './Components/InformationFooter/info/info';
+import AboutUs from './Components/Footer/EmpresaF/About Us/About Us';
 function App({ done }) {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App({ done }) {
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/NextArriving/Zone" element={<Zone />}></Route>
           <Route exact path="/NextArriving/Info" element={<Info />}></Route>
+          <Route exact path='/NextArriving/AboutUs' element={<AboutUs/>}></Route>
           {/* <Route exact path="/" element={<Loading done="70" />}></Route> */}
         </Routes>
       </div>
