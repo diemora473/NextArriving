@@ -1,104 +1,77 @@
 import {
-    Container,
-    SimpleGrid,
-    Image,
-    Flex,
-    Heading,
-    Text,
-    Stack,
-    StackDivider,
-    Icon,
-    useColorModeValue,
-  } from '@chakra-ui/react';
-  import {
-    IoAnalyticsSharp,
-    IoLogoBitcoin,
-    IoSearchSharp,
-  } from 'react-icons/io5';
-  import { ReactElement } from 'react';
-  
-  interface FeatureProps {
-    text: string;
-    iconBg: string;
-    icon?: ReactElement;
-  }
-  
-  const Feature = ({ text, icon, iconBg }: FeatureProps) => {
-    return (
-      <Stack direction={'row'} align={'center'}>
-        <Flex
-          w={8}
-          h={8}
-          align={'center'}
-          justify={'center'}
-          rounded={'full'}
-          bg={iconBg}>
-          {icon}
-        </Flex>
-        <Text fontWeight={600}>{text}</Text>
-      </Stack>
-    );
-  };
-  
-  export default function SplitWithImage() {
-    return (
-      <Container maxW={'5xl'} py={12}>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-          <Stack spacing={4}>
+  Flex,
+  Container,
+  Heading,
+  Stack,
+  Text,
+  Button,
+  Icon,
+  IconProps,
+  useBreakpointValue,
+} from '@chakra-ui/react';
+import logo3 from '../../../Img/logo3.png';
+export default function HeaderAbout() {
+  return (
+    <Container maxW={'5xl'}>
+
+      <Stack
+        textAlign={'center'}
+        align={'center'}
+        spacing={{ base: 8, md: 10 }}
+        py={{ base: 20, md: 28 }}>
+          <div className=''>
+        <Heading
+          fontWeight={600}
+          fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+          lineHeight={'110%'}>
+          Sobre {' '}
+          <Text as={'span'} color={'orange.400'}>
+           Nosotros
+          </Text>
+        </Heading>
+            </div>
+        <Text color={'gray.500'} maxW={'3xl'}>
+         Somos un grupo de empresarios, con el objetivo de poder construir una logistica, donde tus pedidos lleguen seguros, que puedan llegar en 24 horas, poder brindarte la seguridad de que tu pedido va a llegar al lugar del destino en tiempo y forma. Que puedas tener la seguridad de que vamos a tener el mayor cuidado con tu pedido para que pueda llegar en el mejor estado posible.
+        </Text>
+        <Text color={'gray.500'} maxW={'3xl'}>
+          Contamos con mas de dos años de experiencia en el rubro, contando con numerosos clientes, y con muy buenas recomendaciones de parte de ellos, donde cada dia nos proponemos a mejorar mas, para que tus pedidos lleguen de la mejor manera y de la manera mas rapida
+        </Text>
+        <Text color={'gray.500'} maxW={'3xl'}>
+Nuestro Objetivo es poder cubrir todas las zonas en su totalidad, para que puedas vender tranquilo tus productos sabiendo que van a llegar al destino donde sea que este se encuentre, teniendo asi mejor posibilidad de que tu negocio pueda crecer como siempre quisiste!.
+        </Text>
+        <div className='relative top-10'>
+
+        <img
+        src={logo3}
+        />
+        </div>
+        {/* <Flex p={8} flex={1} align={'center'} justify={'center'}>
+        <Stack spacing={6} w={'full'} maxW={'lg'}>
+          <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
             <Text
-              textTransform={'uppercase'}
-              color={'blue.400'}
-              fontWeight={600}
-              fontSize={'sm'}
-              bg={useColorModeValue('blue.50', 'blue.900')}
-              p={2}
-              alignSelf={'flex-start'}
-              rounded={'md'}>
-              Sobre nosotros
+              as={'span'}
+              position={'relative'}
+              _after={{
+                content: "''",
+                width: 'full',
+                height: useBreakpointValue({ base: '20%', md: '30%' }),
+                position: 'absolute',
+                bottom: 1,
+                left: 0,
+                bg: 'blue.400',
+                zIndex: -1,
+              }}>
+              Freelance
             </Text>
-            <Heading>Razones para trabajar con nosotros</Heading>
-            <Text color={'gray.500'} fontSize={'lg'}>
-              Nos proponemos a buscar las mejores formas para que tu pedido llegue en tiempo y forma al destinatario.
-            </Text>
-            <Stack
-              spacing={4}
-              divider={
-                <StackDivider
-                  borderColor={useColorModeValue('gray.100', 'gray.700')}
-                />
-              }>
-              <Feature
-                icon={
-                  <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
-                }
-                iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                text={'Constante Crecimiento.'}
-              />
-              <Feature
-                icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-                iconBg={useColorModeValue('green.100', 'green.900')}
-                text={'Seguridad Economica.'}
-              />
-              <Feature
-                icon={
-                  <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
-                }
-                iconBg={useColorModeValue('purple.100', 'purple.900')}
-                text={'Buscamos seguir creciendo.'}
-              />
-            </Stack>
+            <br />{' '}
+            <Text color={'blue.400'} as={'span'}>
+              Design Projects
+            </Text>{' '}
+          </Heading>
           </Stack>
-          <Flex>
-            <Image
-              rounded={'md'}
-              alt={'feature image'}
-              src={
-                'https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-              }
-              objectFit={'cover'}
-            />
-          </Flex>
-        </SimpleGrid>
-      </Container>
-    );
-  }
+          </Flex> */}
+      </Stack>
+    </Container>
+  );
+}
+
