@@ -62,7 +62,7 @@ export default function FooterAbout() {
                             <Link href={'#'}>Sobre Nosotros</Link>
                             <Link href={'#'}>Nuestra Empresa</Link>
                             <Link href={'#'}>Trabaja con Nosotros</Link >
-                            <Link href={'#'}>Preguntas frecuentes.</Link>
+                            <Link href={'/NextArriving/Questions'}>Preguntas frecuentes.</Link>
 
                         </Stack>
                         <Stack align={'flex-start'}>

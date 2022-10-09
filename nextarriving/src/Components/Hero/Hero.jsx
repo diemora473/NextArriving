@@ -20,6 +20,7 @@ import {
 import Wave from "../Wave/Wave";
 import '../NavBar/NavBar.css'
 import Carousel from "../Carrousel/Carrousel";
+import 'animate.css';
 export default function Hero() {
     return (
         <div className="relative ">
@@ -40,7 +41,7 @@ export default function Hero() {
                             fontSize={{ base: '3xl', sm: '4xl', lg: '5xl' }}>
 
                             <br />
-                            <div className="">
+                            <div className="animate__animated animate__fadeIn">
                                 <a href="https://www.instagram.com/nextarriving/">
 
                                     <img className="relative w-30 h-40 left-5 mb-10 btn nav"

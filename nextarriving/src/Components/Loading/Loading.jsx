@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import './Loading.css'
+import 'animate.css'
 import logo3 from '../Img/logo3.png';
 // import Fondo3 from '../Img/Fondo3.jpg';
 import { Grid, GridItem } from '@chakra-ui/react'
@@ -26,10 +27,10 @@ const Loading = ({ done }) => {
 
     return (
         <div className="bg-gradiet-to-r from-orange-500  via-orange-600 to-pink-500  flex items-center justify-center h-screen w-sreen ">
-            <div className="relative img ">
+            <div className="relative ">
 
                 <img
-                    className="h-42 img"
+                    className="h-42 animate__animated animate__fadeIn"
                     src={logo3}
                     alt="NextArriving"
                 />

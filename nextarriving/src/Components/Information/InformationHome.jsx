@@ -1,11 +1,12 @@
 import React from "react";
 import chicaplanilla from "../Img/chicaplanilla.jpg"
-import '../NavBar/NavBar.css'
+import '../NavBar/NavBar.css';
+import 'animate.css';
 
 const Mensajeria = () => {
     return (
-        <div class="hero min-h-screen bg-base-200">
-            <div class="hero-content flex-col lg:flex-row-reverse ">
+        <div id="Mensajeria" class="hero min-h-screen bg-base-200 ">
+            <div class="hero-content flex-col lg:flex-row-reverse animate__animated animate__fadeIn ">
                 <img src={chicaplanilla} class="w-72 rounded-lg shadow-2xl" />
                 <div>
                     <h1 class="text-5xl font-bold">Mensajería y Logística</h1>

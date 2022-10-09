@@ -45,33 +45,20 @@ export default function FooterQuestions() {
                             <ListHeader>NextArriving</ListHeader>
                             <Link href={'/'}>Home</Link>
                             <Stack direction={'row'} align={'center'} spacing={2}>
-                                <Link href={'#'}>Informacion</Link>
-                                {/* <Tag
-                                size={'sm'}
-                                bg={useColorModeValue('green.300', 'green.800')}
-                                ml={2}
-                                color={'white'}>
-                                New
-                            </Tag> */}
+                                <Link href={'#'}>Informacion</Link> 
                             </Stack>
-                            <Link href={'#'}>Testimonios</Link>
                             <Link href={'#'}>Zonas</Link>
                         </Stack>
                         <Stack align={'flex-start'}>
                             <ListHeader>Empresa</ListHeader>
-                            <Link href={'#'}>Sobre Nosotros</Link>
-                            <Link href={'#'}>Nuestra Empresa</Link>
+                            <Link href={'/NextArriving/AboutUs'}>Sobre Nosotros</Link>
                             <Link href={'#'}>Trabaja con Nosotros</Link >
-                            <Link href={'#'}>Preguntas frecuentes.</Link>
+                            <Link href={'/NextArriving/Questions'}>Preguntas frecuentes.</Link>
 
                         </Stack>
                         <Stack align={'flex-start'}>
                             <ListHeader>Legal</ListHeader>
                             <Link href={'#'}>Privacidad</Link>
-                            <Link href={'#'}>Privacy Policy</Link>
-                            <Link href={'#'}>Terms of Service</Link>
-                            <Link href={'#'}>Law Enforcement</Link>
-                            <Link href={'#'}>Status</Link>
                         </Stack>
                         <Stack align={'flex-start'}>
                             <ListHeader>Contactanos</ListHeader>

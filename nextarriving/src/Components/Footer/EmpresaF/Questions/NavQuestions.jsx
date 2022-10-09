@@ -198,11 +198,21 @@ import {
   const MobileNav = () => {
     return (
       <Stack
-        bg={useColorModeValue('white', 'gray.800')}
+      
+        bg={useColorModeValue('gray.100', 'gray.800')}
         p={4}
         display={{ md: 'none' }}>
-        <div>
-            hola
+          <div className='divide-y'>
+
+        <div className='font-medium pb-2'>
+            Home
+        </div>
+        <div className='font-medium pt-2 pb-2'>
+          Zonas
+        </div>
+        <div className='font-medium bg-green-600 text-white rounded-lg pt-1 pb-1'>
+            Whatsapp
+          </div>
         </div>
       </Stack>
     );

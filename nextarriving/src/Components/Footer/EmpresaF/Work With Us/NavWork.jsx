@@ -1,104 +1,307 @@
 import {
-    Container,
-    SimpleGrid,
-    Image,
-    Flex,
-    Heading,
-    Text,
-    Stack,
-    StackDivider,
-    Icon,
-    useColorModeValue,
-  } from '@chakra-ui/react';
-  import {
-    IoAnalyticsSharp,
-    IoLogoBitcoin,
-    IoSearchSharp,
-  } from 'react-icons/io5';
-  import { ReactElement } from 'react';
-  
-  interface FeatureProps {
-    text: string;
-    iconBg: string;
-    icon?: ReactElement;
-  }
-  
-  const Feature = ({ text, icon, iconBg }: FeatureProps) => {
-    return (
-      <Stack direction={'row'} align={'center'}>
+  Box,
+  Flex,
+  Text,
+  IconButton,
+  Button,
+  Stack,
+  Collapse,
+  Icon,
+  Link,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  useColorModeValue,
+  useBreakpointValue,
+  useDisclosure,
+} from '@chakra-ui/react';
+import {
+  HamburgerIcon,
+  CloseIcon,
+  ChevronDownIcon,
+  ChevronRightIcon,
+} from '@chakra-ui/icons';
+import logo2 from '../../../Img/logo2.png';
+
+export default function NavWith() {
+  const { isOpen, onToggle } = useDisclosure();
+
+  return (
+      <div className='nav '>
+    <Box>
+      <Flex
+        color={useColorModeValue('gray.600', 'white')}
+        minH={'60px'}
+        py={{ base: 2 }}
+        px={{ base: 4 }}
+        borderBottom={1}
+        borderStyle={'solid'}
+        borderColor={useColorModeValue('gray.200', 'gray.900')}
+        align={'center'}>
         <Flex
-          w={8}
-          h={8}
-          align={'center'}
-          justify={'center'}
-          rounded={'full'}
-          bg={iconBg}>
-          {icon}
+          flex={{ base: 1, md: 'auto' }}
+          ml={{ base: -2 }}
+          display={{ base: 'flex', md: 'none' }}>
+          <IconButton
+            onClick={onToggle}
+            icon={
+              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
+            }
+            variant={'ghost'}
+            aria-label={'Toggle Navigation'}
+          />
         </Flex>
-        <Text fontWeight={600}>{text}</Text>
-      </Stack>
-    );
-  };
-  
-  export default function SplitWithImage() {
-    return (
-      <Container maxW={'5xl'} py={12}>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-          <Stack spacing={4}>
-            <Text
-              textTransform={'uppercase'}
-              color={'blue.400'}
-              fontWeight={600}
-              fontSize={'sm'}
-              bg={useColorModeValue('blue.50', 'blue.900')}
-              p={2}
-              alignSelf={'flex-start'}
-              rounded={'md'}>
-              Sobre nosotros
-            </Text>
-            <Heading>Razones para trabajar con nosotros</Heading>
-            <Text color={'gray.500'} fontSize={'lg'}>
-              Nos proponemos a buscar las mejores formas para que tu pedido llegue en tiempo y forma al destinatario.
-            </Text>
-            <Stack
-              spacing={4}
-              divider={
-                <StackDivider
-                  borderColor={useColorModeValue('gray.100', 'gray.700')}
-                />
-              }>
-              <Feature
-                icon={
-                  <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
-                }
-                iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                text={'Constante Crecimiento.'}
-              />
-              <Feature
-                icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-                iconBg={useColorModeValue('green.100', 'green.900')}
-                text={'Seguridad Economica.'}
-              />
-              <Feature
-                icon={
-                  <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
-                }
-                iconBg={useColorModeValue('purple.100', 'purple.900')}
-                text={'Buscamos seguir creciendo.'}
-              />
-            </Stack>
-          </Stack>
-          <Flex>
-            <Image
-              rounded={'md'}
-              alt={'feature image'}
-              src={
-                'https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-              }
-              objectFit={'cover'}
-            />
+        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+          {/* <Text
+            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+            fontFamily={'heading'}
+            color={useColorModeValue('gray.800', 'white')}>
+          
+          </Text> */}
+              <div className='h-12 lg:w-32'>
+                <Link href='/'>
+           <img 
+           src={logo2}
+           />
+           </Link>
+           </div>
+
+          <Flex display={{ base: 'none', md: 'flex' }} ml={20}>
+            {/* <DesktopNav /> */}
           </Flex>
-        </SimpleGrid>
-      </Container>
-    );
-  }
+        </Flex>
+
+        <Stack
+          flex={{ base: 1, md: 0 }}
+          justify={'flex-end'}
+          direction={'row'}
+          spacing={6}>
+
+          <div class=" pr-5 text-white ">
+            <div className='hidden lg:block'>
+<Link href='/'>
+                              <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full ">Home</div>
+</Link>
+                          </div>
+                            </div>
+           
+          <div class=" pr-5 text-white ">
+            <div className='hidden lg:block'>
+
+                              <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full ">Zonas</div>
+                          </div>
+                            </div>
+           
+          <div class=" pr-5 text-white ">
+            <div className='hidden lg:block'>
+
+                              <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full ">Otros</div>
+                          </div>
+                            </div>
+           
+         
+                          
+        </Stack>
+      </Flex>
+
+      <Collapse in={isOpen} animateOpacity>
+        <MobileNav />
+       
+      </Collapse>
+    </Box>
+    </div>
+
+  );
+}
+
+const DesktopNav = () => {
+  const linkColor = useColorModeValue('gray.600', 'gray.200');
+  const linkHoverColor = useColorModeValue('gray.800', 'white');
+  const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+
+  return (
+    <Stack direction={'row'} spacing={4}>
+      {NAV_ITEMS.map((navItem) => (
+        <Box key={navItem.label}>
+          <Popover trigger={'hover'} placement={'bottom-start'}>
+            <PopoverTrigger>
+              <Link
+                p={2}
+                href={navItem.href ?? '#'}
+                fontSize={'sm'}
+                fontWeight={500}
+                color={linkColor}
+                _hover={{
+                  textDecoration: 'none',
+                  color: linkHoverColor,
+                }}>
+                {navItem.label}
+              </Link>
+            </PopoverTrigger>
+
+            {navItem.children && (
+              <PopoverContent
+                border={0}
+                boxShadow={'xl'}
+                bg={popoverContentBgColor}
+                p={4}
+                rounded={'xl'}
+                minW={'sm'}>
+                <Stack>
+                  {navItem.children.map((child) => (
+                    <DesktopSubNav key={child.label} {...child} />
+                  ))}
+                </Stack>
+              </PopoverContent>
+            )}
+          </Popover>
+        </Box>
+      ))}
+    </Stack>
+  );
+};
+
+const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+  return (
+    <Link
+      href={href}
+      role={'group'}
+      display={'block'}
+      p={2}
+      rounded={'md'}
+      _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+      <Stack direction={'row'} align={'center'}>
+        <Box>
+          <Text
+            transition={'all .3s ease'}
+            _groupHover={{ color: 'pink.400' }}
+            fontWeight={500}>
+            {label}
+          </Text>
+          <Text fontSize={'sm'}>{subLabel}</Text>
+        </Box>
+        <Flex
+          transition={'all .3s ease'}
+          transform={'translateX(-10px)'}
+          opacity={0}
+          _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
+          justify={'flex-end'}
+          align={'center'}
+          flex={1}>
+          <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+        </Flex>
+      </Stack>
+    </Link>
+  );
+};
+
+const MobileNav = () => {
+  return (
+    <Stack
+      bg={useColorModeValue('white', 'gray.800')}
+      p={4}
+      display={{ md: 'none' }}>
+      <div>
+          hola
+      </div>
+    </Stack>
+  );
+};
+
+const MobileNavItem = ({ label, children, href }: NavItem) => {
+  const { isOpen, onToggle } = useDisclosure();
+
+  return (
+    <Stack spacing={4} onClick={children && onToggle}>
+      <Flex
+        py={2}
+        as={Link}
+        href={href ?? '#'}
+        justify={'space-between'}
+        align={'center'}
+        _hover={{
+          textDecoration: 'none',
+        }}>
+        <Text
+          fontWeight={600}
+          color={useColorModeValue('gray.600', 'gray.200')}>
+          {label}
+        </Text>
+        {children && (
+          <Icon
+            as={ChevronDownIcon}
+            transition={'all .25s ease-in-out'}
+            transform={isOpen ? 'rotate(180deg)' : ''}
+            w={6}
+            h={6}
+          />
+        )}
+      </Flex>
+
+      <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
+        <Stack
+          mt={2}
+          pl={4}
+          borderLeft={1}
+          borderStyle={'solid'}
+          borderColor={useColorModeValue('gray.200', 'gray.700')}
+          align={'start'}>
+          {children &&
+            children.map((child) => (
+              <Link key={child.label} py={2} href={child.href}>
+                {child.label}
+              </Link>
+            ))}
+        </Stack>
+      </Collapse>
+    </Stack>
+  );
+};
+
+interface NavItem {
+  label: string;
+  subLabel?: string;
+  children?: Array<NavItem>;
+  href?: string;
+}
+
+const NAV_ITEMS: Array<NavItem> = [
+  {
+    label: 'Inspiration',
+    children: [
+      {
+        label: 'Explore Design Work',
+        subLabel: 'Trending Design to inspire you',
+        href: '#',
+      },
+      {
+        label: 'New & Noteworthy',
+        subLabel: 'Up-and-coming Designers',
+        href: '#',
+      },
+    ],
+  },
+  {
+    label: 'Find Work',
+    children: [
+      {
+        label: 'Job Board',
+        subLabel: 'Find your dream design job',
+        href: '#',
+      },
+      {
+        label: 'Freelance Projects',
+        subLabel: 'An exclusive list for contract work',
+        href: '#',
+      },
+    ],
+  },
+  {
+    label: 'Learn Design',
+    href: '#',
+  },
+  {
+    label: 'Hire Designers',
+    href: '#',
+  },
+];
