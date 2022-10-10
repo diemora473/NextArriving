@@ -8,3 +8,7 @@
 .back:hover {
     transform: scale(1.2);
 }
+
+.prueba1:hover{
+    background: #15803d;
+}

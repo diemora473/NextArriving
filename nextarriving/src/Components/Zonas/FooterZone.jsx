@@ -34,7 +34,7 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 
 export default function FooterZone() {
     return (
-        <div className='bg-slate-700'>
+        <div className='bg-slate-700 animate__animated animate__fadeIn'>
 
             <Box
 
@@ -42,41 +42,56 @@ export default function FooterZone() {
                 <Container as={Stack} maxW={'6xl'} py={10}>
                     <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
                         <Stack align={'flex-start'}>
+                            <div className=''>
+
                             <ListHeader>NextArriving</ListHeader>
-                            <Link href={'/'}>Home</Link>
+                            </div>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'/'}>Home</a>
+                            </div>
                             <Stack direction={'row'} align={'center'} spacing={2}>
-                                <Link href={'#'}>Informacion</Link>
-                                {/* <Tag
-                                size={'sm'}
-                                bg={useColorModeValue('green.300', 'green.800')}
-                                ml={2}
-                                color={'white'}>
-                                New
-                            </Tag> */}
+                                
                             </Stack>
-                            <Link href={'#'}>Testimonios</Link>
-                            <Link href={'#'}>Zonas</Link>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'/NextArriving/Zone'}>Zonas</a>
+                            </div>
                         </Stack>
                         <Stack align={'flex-start'}>
                             <ListHeader>Empresa</ListHeader>
-                            <Link href={'#'}>Sobre Nosotros</Link>
-                            <Link href={'#'}>Nuestra Empresa</Link>
-                            <Link href={'#'}>Trabaja con Nosotros</Link >
-                            <Link href={'#'}>Preguntas frecuentes.</Link>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'/NextArriving/AboutUs'}>Sobre Nosotros</a>
+                            </div>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'/NextArriving/WorkWithUs'}>Trabaja con Nosotros</a >
+                            </div>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'/NextArriving/Questions'}>Preguntas frecuentes.</a>
+                            </div>
 
                         </Stack>
                         <Stack align={'flex-start'}>
                             <ListHeader>Legal</ListHeader>
-                            <Link href={'#'}>Privacidad</Link>
-                            <Link href={'#'}>Privacy Policy</Link>
-                            <Link href={'#'}>Terms of Service</Link>
-                            <Link href={'#'}>Law Enforcement</Link>
-                            <Link href={'#'}>Status</Link>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'#'}>Privacidad</a>
+                            </div>
+                            
                         </Stack>
                         <Stack align={'flex-start'}>
                             <ListHeader>Contactanos</ListHeader>
-                            <Link href={'#'}>Instagram</Link>
-                            <Link href={'https://api.WhatsApp.com/send?phone=5491127516431'}>+5491127516431</Link>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'https://www.instagram.com/nextarriving/'}>Instagram</a>
+                            </div>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'https://api.WhatsApp.com/send?phone=5491127516431'}>+5491127516431</a>
+                            </div>
                         </Stack>
                     </SimpleGrid>
                 </Container>

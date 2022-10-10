@@ -27,7 +27,7 @@ function StatsCard(props: StatsCardProps) {
         <Stat
             px={{ base: 2, md: 4 }}
             py={'5'}
-            className='nav back cursor-pointer shadow-2xl'
+            className='prueba1 back cursor-pointer shadow-2xl'
             shadow={'xl'}
             border={'3px solid'}
             // borderColor={useColorModeValue('orange.500')}

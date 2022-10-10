@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './Components/Home/Home';
 import { Provider } from 'react';
+import {Helmet} from "react-helmet"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Loading from './Components/Loading/Loading';
 // import NavZone from './Components/Zonas/NavZonas';
@@ -14,6 +15,11 @@ function App({ done }) {
   return (
     <Router>
       <div className="App bg-base-200 relative h-full">
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Next Arriving</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/NextArriving/Zone" element={<Zone />}></Route>

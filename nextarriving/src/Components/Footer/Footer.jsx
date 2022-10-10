@@ -39,39 +39,60 @@ export default function Footer() {
             <Container as={Stack} maxW={'6xl'} py={10}>
                 <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
                     <Stack align={'flex-start'}>
+                        <div className='text-green-700'>
+
                         <ListHeader>NextArriving</ListHeader>
+                        </div>
+                        <div className='font-bold hover:text-green-700'>
+
                         <Link href={'#'}>Home</Link>
-                        <Stack direction={'row'} align={'center'} spacing={2}>
-                            <Link href={'/NextArriving/Info'}>Informacion</Link>
-                            {/* <Tag
-                                size={'sm'}
-                                bg={useColorModeValue('green.300', 'green.800')}
-                                ml={2}
-                                color={'white'}>
-                                New
-                            </Tag> */}
-                        </Stack>
+                        </div>
+                        <div className='font-bold hover:text-green-700'>
+                            
                         <Link href={'/NextArriving/Zone'}>Zonas</Link>
+                        </div>
                     </Stack>
+
                     <Stack align={'flex-start'}>
+                    <div className='text-green-700'>
                         <ListHeader>Empresa</ListHeader>
-                        <Link href={'/NextArriving/AboutUs'}>Sobre Nosotros</Link>
-                        <Link href={'/NextArriving/WorkWithUs'}>Trabaja con Nosotros</Link >
-                        <Link href={'/NextArriving/Questions'}>Preguntas frecuentes.</Link>
+                    </div>
+                    <div className='font-bold hover:text-green-700'>
+
+                        <a href={'/NextArriving/AboutUs'}>Sobre Nosotros</a>
+                    </div>
+                    <div className='font-bold hover:text-green-700'>
+
+                        <a href={'/NextArriving/WorkWithUs'}>Trabaja con Nosotros</a >
+                    </div>
+                    <div className='font-bold hover:text-green-700'>
+
+                        <a href={'/NextArriving/Questions'}>Preguntas frecuentes.</a>
+                    </div>
 
                     </Stack>
                     <Stack align={'flex-start'}>
+                        <div className='text-green-700'>
+
                         <ListHeader>Legal</ListHeader>
-                        <Link href={'#'}>Privacidad</Link>
-                        <Link href={'#'}>Privacy Policy</Link>
-                        <Link href={'#'}>Terms of Service</Link>
-                        <Link href={'#'}>Law Enforcement</Link>
-                        <Link href={'#'}>Status</Link>
+                        </div>
+                        <div className='font-bold hover:text-green-700'>
+
+                        <a href={'#'}>Privacidad</a>
+                        </div>
                     </Stack>
                     <Stack align={'flex-start'}>
+                        <div className='text-green-700'>
                         <ListHeader>Contactanos</ListHeader>
-                        <Link href={'#'}>Instagram</Link>
-                        <Link href={'https://api.WhatsApp.com/send?phone=5491127516431'}>+5491127516431</Link>
+                        </div>
+                        <div className='font-bold hover:text-green-700'>
+
+                        <a href={'#'}>Instagram</a>
+                        </div>
+                        <div className='font-bold hover:text-green-700'>
+
+                        <a href={'https://api.WhatsApp.com/send?phone=5491127516431'}>+5491127516431</a>
+                        </div>
                     </Stack>
                 </SimpleGrid>
             </Container>

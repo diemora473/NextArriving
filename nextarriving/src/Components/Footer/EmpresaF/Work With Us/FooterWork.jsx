@@ -10,7 +10,7 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react';
 import { ReactNode } from 'react';
-import '../../../NavBar/NavBar.css';
+// import '../NavBar/NavBar.css';
 import logo2 from '../../../Img/logo2.png';
 
 const Logo = (props: any) => {
@@ -42,28 +42,56 @@ export default function FooterWorkWithUs() {
                 <Container as={Stack} maxW={'6xl'} py={10}>
                     <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
                         <Stack align={'flex-start'}>
+                            <div className=''>
+
                             <ListHeader>NextArriving</ListHeader>
-                            <Link href={'/'}>Home</Link>
+                            </div>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'/'}>Home</a>
+                            </div>
                             <Stack direction={'row'} align={'center'} spacing={2}>
-                                <Link href={'#'}>Informacion</Link> 
+                                
                             </Stack>
-                            <Link href={'#'}>Zonas</Link>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'/NextArriving/Zone'}>Zonas</a>
+                            </div>
                         </Stack>
                         <Stack align={'flex-start'}>
                             <ListHeader>Empresa</ListHeader>
-                            <Link href={'/NextArriving/AboutUs'}>Sobre Nosotros</Link>
-                            <Link href={'/NextArriving/WorkWithUs'}>Trabaja con Nosotros</Link >
-                            <Link href={'/NextArriving/Questions'}>Preguntas frecuentes.</Link>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'/NextArriving/AboutUs'}>Sobre Nosotros</a>
+                            </div>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'/NextArriving/WorkWithUs'}>Trabaja con Nosotros</a >
+                            </div>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'/NextArriving/Questions'}>Preguntas frecuentes.</a>
+                            </div>
 
                         </Stack>
                         <Stack align={'flex-start'}>
                             <ListHeader>Legal</ListHeader>
-                            <Link href={'#'}>Privacidad</Link>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'#'}>Privacidad</a>
+                            </div>
+                            
                         </Stack>
                         <Stack align={'flex-start'}>
                             <ListHeader>Contactanos</ListHeader>
-                            <Link href={'#'}>Instagram</Link>
-                            <Link href={'https://api.WhatsApp.com/send?phone=5491127516431'}>+5491127516431</Link>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'https://www.instagram.com/nextarriving/'}>Instagram</a>
+                            </div>
+                            <div className='font-bold hover:text-green-600'>
+
+                            <a href={'https://api.WhatsApp.com/send?phone=5491127516431'}>+5491127516431</a>
+                            </div>
                         </Stack>
                     </SimpleGrid>
                 </Container>

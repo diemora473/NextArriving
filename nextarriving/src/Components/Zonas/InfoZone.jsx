@@ -10,6 +10,8 @@ import mOeste from '../Img/mOeste.jpeg';
 import mSur from '../Img/mSur.jpeg';
 export default function InfoZone() {
     return (
+        <div className='animate__animated animate__fadeIn'>
+
         <Container maxW={'5xl'}>
             <Stack
                 textAlign={'center'}
@@ -21,7 +23,7 @@ export default function InfoZone() {
                     fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
                     lineHeight={'110%'}>
                     Mira que zonas{' '}
-                    <Text as={'span'} color={'orange.400'}>
+                    <Text as={'span'} color={'green.700'}>
                         cubrimos!
                     </Text>
                 </Heading>
@@ -89,5 +91,6 @@ export default function InfoZone() {
                 </div >
             </div>
         </Container >
+                        </div>
     );
 }

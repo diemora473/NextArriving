@@ -25,8 +25,8 @@ import {
 const HeaderQuestions = () => {
     return(
 
-        <div className="bg-base-200">
-<div className="font-normal text-xl flex justify-center pt-5 pb-5 ">
+        <div className="relative bg-base-200 animate__animated animate__fadeIn">
+<div className="font-normal text-xl flex justify-center pt-20 pb-5 ">
 Preguntas frecuentes
 <div className="lg:pl-80 lg:ml-96 pl-20">
   <a href="/">

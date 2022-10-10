@@ -29,12 +29,12 @@ export default function NavWith() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-        <div className='fixed w-full'>
-      <div className='bg-black'>
+        <div className='fixed w-full z-10'>
+      <div className='NavWork'>
 
     <Box>
       <Flex
-        color={useColorModeValue('gray.600', 'white')}
+        color={useColorModeValue('white', 'white')}
         minH={'60px'}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -81,27 +81,90 @@ export default function NavWith() {
           direction={'row'}
           spacing={6}>
 
-          <div class=" pr-5 text-white ">
+          <div class=" pr-5 text-white">
             <div className='hidden lg:block'>
-<Link href='/'>
-                              <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full ">Home</div>
-</Link>
+<a href='/'>
+                              <div class="btn btn-ghost normal-case text-lg hover:bg-green-700 rounded-full ">Home</div>
+</a>
                           </div>
                             </div>
            
           <div class=" pr-5 text-white ">
             <div className='hidden lg:block'>
 
-                              <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full ">Zonas</div>
+                              <div class="btn btn-ghost normal-case text-lg hover:bg-green-700  rounded-full ">Zonas</div>
                           </div>
                             </div>
            
-          <div class=" pr-5 text-white ">
-            <div className='hidden lg:block'>
+                            <div class=" pr-5 text-white ">
+              <div className='hidden lg:block relative '>
+  
+              <div className="dropdown dropdown-end relative ">
+  <label tabIndex={1} className="btn btn-ghost normal-case text-lg rounded-full hover:bg-green-700  ">Mas</label>
+  <ul tabIndex={1} className="text-black dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 ">
+    <div className='hover:bg-green-600 rounded-box hover:text-white'>
 
-                              <div class="btn btn-ghost normal-case text-lg hover:bg-orange-500 rounded-full ">Otros</div>
-                          </div>
+    <li><a href='/NextArriving/AboutUs'>Sobre Nosotros</a></li>
+    </div>
+    <div className='hover:bg-green-600 rounded-box hover:text-white'>
+
+    <li><a href='/NextArriving/WorkWithUs'>Trabaja con Nosotros</a></li>
+    </div>
+    <div className='hover:bg-green-600 hover:text-white rounded-box '>
+
+    <li><a href='/NextArriving/Questions'>Preguntas Frecuentes</a></li>
+    </div>
+    <div className=' rounded-box bg-green-700 mt-1'>
+
+    <li>
+    <div>
+
+<a href='https://api.WhatsApp.com/send?phone=5491127516431'>
+
+<div className='w-full text-white flex items-center justify-center'>
+    <div className='pr-10'>
+
+    Whatsapp
+    </div>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+<path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+<path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+</svg>
+</div>
+</a>
+</div>
+
+    </li>
+    </div>
+    <div className=' rounded-box insta mt-1'>
+
+    <li>
+    <div className=''>
+
+            <a href='https://www.instagram.com/nextarriving/'>
+
+            <div className='font-bold  text-white flex items-center justify-center'>
+                <div className='pr-10'>
+
+                Instagram
+                </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="16" height="16" rx="4" />
+  <circle cx="12" cy="12" r="3" />
+  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+</svg>
+            </div>
+            </a>
+            </div>
+
+    </li>
+    </div>
+  </ul>
+</div>
                             </div>
+                              </div>
            
          
                           
@@ -203,13 +266,92 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue('white', 'gray.800')}
-      p={4}
-      display={{ md: 'none' }}>
-      <div>
-          hola
-      </div>
-    </Stack>
+      className='relative'
+        bg={useColorModeValue('white', 'gray.800')}
+        p={4}
+        display={{ md: 'none' }}>
+            <div className='divide-y'>
+<div>
+
+            <a href='/'>
+
+            <div className='font-bold pb-3'>
+            Home
+            </div>
+            </a>
+</div>
+            <div>
+
+            <a href='/NextArriving/Zone'>
+
+            <div className='font-bold pt-3 pb-3'>
+            Zonas
+            </div>
+            </a>
+            </div>
+            <div>
+
+            <a href='/NextArriving/AboutUs'>
+
+            <div className='font-bold pt-3 pb-3'>
+            Sobre Nosotros
+            </div>
+            </a>
+            </div>
+            <div>
+
+            <a href='/NextArriving/WorkWithUs'>
+
+            <div className='font-bold pt-3 pb-3'>
+            Trabaja con Nosotros
+            </div>
+            </a>
+            </div>
+            <div>
+            <a href='/NextArriving/Questions'>
+
+            <div className='font-bold pt-3 pb-3'>
+            Preguntas frecuentes
+            </div>
+            </a>
+            </div>
+            <div>
+
+<a href='https://api.WhatsApp.com/send?phone=5491127516431'>
+
+<div className='font-bold  bg-green-600 rounded text-white flex items-center justify-center'>
+    <div className='pr-5'>
+
+    Whatsapp
+    </div>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+<path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+<path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+</svg>
+</div>
+</a>
+</div>
+<div className='pt-0.5'>
+
+<a href='https://www.instagram.com/nextarriving/'>
+
+<div className='font-bold insta rounded text-white flex items-center justify-center'>
+    <div className='pr-5'>
+
+    Instagram
+    </div>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+<rect x="4" y="4" width="16" height="16" rx="4" />
+<circle cx="12" cy="12" r="3" />
+<line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+</svg>
+</div>
+</a>
+</div>
+        </div>
+      </Stack>
   );
 };
 
