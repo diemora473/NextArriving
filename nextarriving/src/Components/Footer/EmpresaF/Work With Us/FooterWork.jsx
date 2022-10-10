@@ -32,7 +32,7 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
     );
 };
 
-export default function FooterQuestions() {
+export default function FooterWorkWithUs() {
     return (
         <div className='bg-slate-700'>
 

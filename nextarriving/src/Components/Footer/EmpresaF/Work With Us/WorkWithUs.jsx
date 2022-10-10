@@ -1,13 +1,14 @@
 import React from "react";
+import FooterWorkWithUs from "./FooterWork";
 import HeaderWith from "./HeaderWork";
 import NavWith from "./NavWork";
 
 const WorkWithUs = () => {
     return(
         <div>
-
-        <NavWith/>
+        {/* <NavWith/> */}
 <HeaderWith/>
+<FooterWorkWithUs/>
         </div>
     )
 }

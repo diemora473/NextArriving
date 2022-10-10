@@ -13,7 +13,7 @@ import WorkWithUs from './Components/Footer/EmpresaF/Work With Us/WorkWithUs';
 function App({ done }) {
   return (
     <Router>
-      <div className="App bg-bas-200 relative h-full">
+      <div className="App bg-base-200 relative h-full">
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/NextArriving/Zone" element={<Zone />}></Route>

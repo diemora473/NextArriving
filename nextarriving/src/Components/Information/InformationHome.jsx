@@ -5,7 +5,7 @@ import 'animate.css';
 
 const Mensajeria = () => {
     return (
-        <div id="Mensajeria" class="hero min-h-screen bg-base-200 ">
+        <div id="Mensajeria" class="hero min-h-screen bg-base-200  ">
             <div class="hero-content flex-col lg:flex-row-reverse animate__animated animate__fadeIn ">
                 <img src={chicaplanilla} class="w-72 rounded-lg shadow-2xl" />
                 <div>

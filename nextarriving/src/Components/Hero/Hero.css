@@ -1,0 +1,16 @@
+.Hero{
+    background-position: 50%;
+    background-image: url('https://d3t4nwcgmfrp9x.cloudfront.net/upload/tendencias-entrega-paquetes-para-2022-643x342.jpg');
+    height: 600px;
+}
+
+.Text{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.hero2{
+    height: 50px;
+    transform: scale(2);
+    transform-origin: top center;
+    /* color: #cbd5e1; */
+}

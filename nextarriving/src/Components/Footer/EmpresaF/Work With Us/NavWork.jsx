@@ -22,12 +22,16 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons';
 import logo2 from '../../../Img/logo2.png';
+// import '../../../Statistics/Statistics.css'
+import '../Work With Us/NavWork.css';
 
 export default function NavWith() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-      <div className='nav '>
+        <div className='fixed w-full'>
+      <div className='bg-black'>
+
     <Box>
       <Flex
         color={useColorModeValue('gray.600', 'white')}
@@ -49,14 +53,14 @@ export default function NavWith() {
             }
             variant={'ghost'}
             aria-label={'Toggle Navigation'}
-          />
+            />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           {/* <Text
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             color={useColorModeValue('gray.800', 'white')}>
-          
+            
           </Text> */}
               <div className='h-12 lg:w-32'>
                 <Link href='/'>
@@ -110,6 +114,7 @@ export default function NavWith() {
       </Collapse>
     </Box>
     </div>
+</div>
 
   );
 }
@@ -118,7 +123,7 @@ const DesktopNav = () => {
   const linkColor = useColorModeValue('gray.600', 'gray.200');
   const linkHoverColor = useColorModeValue('gray.800', 'white');
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
-
+  
   return (
     <Stack direction={'row'} spacing={4}>
       {NAV_ITEMS.map((navItem) => (

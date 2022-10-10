@@ -11,7 +11,7 @@ export default function Hero2() {
     return (
         <Flex
             w={'full'}
-            h={'50vh'}
+            className='md:h-full lg:h-96'
             backgroundImage={
                 'url(https://www.cronista.com/files/image/290/290821/5ffe0316b7e1b.jpg)'
             }
