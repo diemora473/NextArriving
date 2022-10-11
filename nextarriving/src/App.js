@@ -11,6 +11,7 @@ import Info from './Components/InformationFooter/info/info';
 import AboutUs from './Components/Footer/EmpresaF/About Us/About Us';
 import Questions from './Components/Footer/EmpresaF/Questions/Questions';
 import WorkWithUs from './Components/Footer/EmpresaF/Work With Us/WorkWithUs';
+import Privacy from './Components/Footer/EmpresaF/Privacy/Privacy';
 function App({ done }) {
   return (
     <Router>
@@ -27,6 +28,7 @@ function App({ done }) {
           <Route exact path='/NextArriving/AboutUs' element={<AboutUs/>}></Route>
           <Route exact path='/NextArriving/Questions' element={<Questions/>}></Route>
           <Route exact path='/NextArriving/WorkWithUs' element={<WorkWithUs/>}></Route>
+          <Route exact path='/NextArriving/Privacy' element={<Privacy/>}></Route>
           {/* <Route exact path="/" element={<Loading done="70" />}></Route> */}
         </Routes>
       </div>
