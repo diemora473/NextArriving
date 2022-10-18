@@ -1,0 +1,8 @@
+.header{
+    background: hsla(0, 0%, 100%, 0.55);
+    backdrop-filter: blur(30px);
+}
+
+.prueba2{
+    background-color: rgba(0, 0, 0, 0.75);
+}

@@ -11,13 +11,13 @@ import {
 } from '@chakra-ui/react';
 import { ReactNode } from 'react';
 import '../NavBar/NavBar.css';
-import logo2 from '../Img/logo2.png';
+import logo3 from '../Img/logo3.png';
 
 const Logo = (props: any) => {
     return (
         <div className='w-40'>
             <img
-                src={logo2}
+                src={logo3}
                 alt='NextArriving'
             />
         </div>
@@ -87,7 +87,7 @@ export default function Footer() {
                         </div>
                         <div className='font-bold hover:text-green-700'>
 
-                        <a href={'#'}>Instagram</a>
+                        <a href={'https://www.instagram.com/nextarriving/'}>Instagram</a>
                         </div>
                         <div className='font-bold hover:text-green-700'>
 

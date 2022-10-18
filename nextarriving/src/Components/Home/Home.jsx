@@ -11,6 +11,7 @@ import Footer from "../Footer/Footer";
 import Loading from "../Loading/Loading";
 import { useState } from "react";
 import { useEffect } from "react";
+import Prueba from "../prueba/prueba";
 
 const Home = ({ done }) => {
     const [loading, setLoading] = useState(false);
@@ -30,8 +31,8 @@ const Home = ({ done }) => {
                         <IconWpp />
                         <NavBar />
                         <Hero />
+                        {/* <Prueba/> */}
                         <Mensajeria />
-                        <Line />
                         {/* <InfoZone /> */}
                         <Hero2 />
                         <Footer />

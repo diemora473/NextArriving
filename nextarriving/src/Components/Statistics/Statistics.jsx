@@ -62,7 +62,7 @@ export default function Statistics() {
                 py={10}
                 className='text-white'
                 fontWeight={'bold'}>
-                Nuestra compañia se esta expandiendo, vos tambien podrias ser parte.
+                Nuestra compañia se esta expandiendo, vos tambien podes ser parte.
             </chakra.h1>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }} className='text-white'>
                 <StatsCard
