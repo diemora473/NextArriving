@@ -12,7 +12,7 @@ import {
 import logo3 from '../../../Img/logo3.png';
 export default function HeaderAbout() {
   return (
-    <div className='animate__animated animate__fadeIn'>
+    <div className='animate__animated animate__fadeIn pt-10'>
 
     <Container maxW={'5xl'}>
 

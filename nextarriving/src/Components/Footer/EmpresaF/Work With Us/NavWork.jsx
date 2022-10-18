@@ -29,7 +29,7 @@ export default function NavWith() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-        <div className='fixed w-full z-10'>
+        <div className='fixed w-full z-10 '>
       <div className='NavWork'>
 
     <Box>

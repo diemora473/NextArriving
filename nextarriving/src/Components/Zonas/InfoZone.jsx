@@ -10,7 +10,7 @@ import mOeste from '../Img/mOeste.jpeg';
 import mSur from '../Img/mSur.jpeg';
 export default function InfoZone() {
     return (
-        <div className='animate__animated animate__fadeIn'>
+        <div className='animate__animated animate__fadeIn pt-10'>
 
         <Container maxW={'5xl'}>
             <Stack

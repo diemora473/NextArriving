@@ -32,7 +32,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export default function HeaderWith() {
   return (
-    <div className=' relative bg-base-200 animate__animated animate__fadeIn'>
+    <div className=' relative bg-base-200 animate__animated animate__fadeIn '>
 <NavWith/>
     <div className="hero h-96" style={{ backgroundImage: `url("https://d3t4nwcgmfrp9x.cloudfront.net/upload/tendencias-entrega-paquetes-para-2022.jpg")` }}>
   <div className="hero-overlay bg-opacity-60"></div>
